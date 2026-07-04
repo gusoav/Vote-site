@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Daily Vote Dashboard</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="hero">
+        <div>
+          <p class="eyebrow">Daily vote dashboard</p>
+          <h1>Vote summary</h1>
+          <p class="hero-copy">
+            Percentage of green, orange, and red votes for Mira and Gianfranco,
+            with raw counts since <strong id="tracking-start-inline">04/07/2026</strong>.
+          </p>
+        </div>
+        <div class="hero-meta">
+          <div>
+            <span class="meta-label">Tracking from</span>
+            <strong id="tracking-start">04/07/2026</strong>
+          </div>
+          <div>
+            <span class="meta-label">Last recorded vote</span>
+            <strong id="last-updated">—</strong>
+          </div>
+        </div>
+      </header>
+
+      <main>
+        <section class="cards" id="dashboard-cards">
+          <article class="vote-card" data-person="mira">
+            <div class="card-header">
+              <div>
+                <p class="card-label">Voter</p>
+                <h2>Mira</h2>
+              </div>
+              <div class="chip" data-tracking-label>Since 04/07/2026</div>
+            </div>
+
+            <div class="chart-block">
+              <div class="donut-wrapper">
+                <div class="donut" id="chart-mira" aria-label="Mira vote chart"></div>
+                <div class="donut-center">
+                  <span class="donut-total-label">Total votes</span>
+                  <strong id="total-mira">0</strong>
+                </div>
+              </div>
+
+              <ul class="legend" id="legend-mira"></ul>
+            </div>
+
+            <div class="totals-panel">
+              <h3 data-totals-heading>Votes since 04/07/2026</h3>
+              <div class="totals-grid" id="totals-mira"></div>
+            </div>
+          </article>
+
+          <article class="vote-card" data-person="gianfranco">
+            <div class="card-header">
+              <div>
+                <p class="card-label">Voter</p>
+                <h2>Gianfranco</h2>
+              </div>
+              <div class="chip" data-tracking-label>Since 04/07/2026</div>
+            </div>
+
+            <div class="chart-block">
+              <div class="donut-wrapper">
+                <div class="donut" id="chart-gianfranco" aria-label="Gianfranco vote chart"></div>
+                <div class="donut-center">
+                  <span class="donut-total-label">Total votes</span>
+                  <strong id="total-gianfranco">0</strong>
+                </div>
+              </div>
+
+              <ul class="legend" id="legend-gianfranco"></ul>
+            </div>
+
+            <div class="totals-panel">
+              <h3 data-totals-heading>Votes since 04/07/2026</h3>
+              <div class="totals-grid" id="totals-gianfranco"></div>
+            </div>
+          </article>
+        </section>
+      </main>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
