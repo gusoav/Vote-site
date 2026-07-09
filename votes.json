@@ -25,6 +25,10 @@
       "date": "2026-07-08",
       "mira": "orange",
       "gianfranco": "red"
+    },
+    {
+      "date": "2026-07-09",
+      "gianfranco": "red"
     }
   ]
 }
